@@ -26,7 +26,7 @@ from rich.panel import Panel
 from rich.progress import Progress
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import IterableDataset
-from transformers import BitsAndBytesConfig, DataCollatorForLanguageModeling, PreTrainedTokenizerBase
+from transformers import BitsAndBytesConfig, DataCollatorForLanguageModeling, PreTrainedModel, PreTrainedTokenizerBase
 from transformers.trainer import TrainerCallback
 from transformers.trainer_utils import has_length
 
