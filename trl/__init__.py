@@ -48,6 +48,8 @@ _import_structure = {
         "RewardConfig",
         "RewardTrainer",
         "SFTTrainer",
+        "SPINConfig",
+        "SPINTrainer",
     ],
     "commands": [],
     "commands.utils": ["SftArgumentParser", "init_zero_verbose", "TrlParser", "DpoArgumentParser"],
@@ -111,6 +113,8 @@ if TYPE_CHECKING:
         RewardConfig,
         RewardTrainer,
         SFTTrainer,
+        SPINConfig,
+        SPINTrainer,
     )
     from .trainer.utils import get_kbit_device_map, get_peft_config, get_quantization_config, RichProgressCallback
     from .commands.utils import init_zero_verbose, SftScriptArguments, DpoScriptArguments, TrlParser
