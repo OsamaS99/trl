@@ -49,6 +49,8 @@ _import_structure = {
     "sft_trainer": ["SFTTrainer"],
     "base": ["BaseTrainer"],
     "ddpo_config": ["DDPOConfig"],
+    "spin_config": ["SPINConfig"],
+    "spin_trainer": ["SPINTrainer"],
 }
 
 try:
@@ -92,6 +94,8 @@ if TYPE_CHECKING:
     from .reward_config import RewardConfig
     from .reward_trainer import RewardTrainer, compute_accuracy
     from .sft_trainer import SFTTrainer
+    from .spin_config import SPINConfig
+    from .spin_trainer import SPINTrainer
 
     try:
         if not is_diffusers_available():
